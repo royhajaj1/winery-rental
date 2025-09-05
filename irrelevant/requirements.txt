@@ -1,0 +1,8 @@
+python-docx==0.8.11
+tqdm>=4.66
+numpy>=1.25
+faiss-cpu>=1.8.0
+openai>=1.30.0
+sentence-transformers>=3.0.1
+requests>=2.31.0
+python-dotenv>=1.0.1

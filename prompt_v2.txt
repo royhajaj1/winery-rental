@@ -68,26 +68,7 @@
 • הערות התאמה לבקשה (למשל עונה/סופ״ש/מספר משתתפים) וכיצד השפיעו על המחיר.
 
 [JSON]
-{
-  "event": {
-    "date_text": "...",
-    "season": "חורף|אביב|קיץ|סתיו",
-    "duration_hours": <int_or_float>,
-    "areas": ["אולם","פרגולה", "..."],
-    "participants": <int>
-  },
-  "line_items": [
-    {"name":"שכירות חלל","unit":"שעות|אירוע|...", "qty": <number>, "unit_price_nis": <number>, "line_total_nis": <number>},
-    {"name":"אוכל","unit":"אדם|...", "qty": <number>, "unit_price_nis": <number>, "line_total_nis": <number>},
-    {"name":"יין/שתייה","unit":"אדם|בקבוק|...", "qty": <number>, "unit_price_nis": <number>, "line_total_nis": <number>}
-    // ...
-  ],
-  "subtotal_nis": <number>,
-  "vat_17_nis": <number>,
-  "total_nis": <number>,
-  "assumptions": ["...", "..."],
-  "notes": ["כולל/לא כולל מע״מ", "תוקף/תנאים", "..."]
-}
+- תוציא כפלט גם קובץ, בהתאם לתבנית שניתנה בtemplate_answer.json - שים לב לשדות בהתאם לקלט
 
 הנחיות חישוב:
 - אם בקונטקסט מצוין מחיר "למשתתף" – חשב line_total_nis = unit_price_nis × participants.
